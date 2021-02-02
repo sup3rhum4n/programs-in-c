@@ -572,11 +572,11 @@ void binary_search_char(char array[], int min, int max, char element)
 	
 	printf("\n\tBinary Search");
 	
-	while (min < max) 
+	while (min <= max) 
 	{
 		printf("\n\tLoop runs %d times", (++i));  // number of times executed
 		
-		mid = (max - min) / 2;
+		mid = (max + min) / 2;
 
 		if (array[mid] == element)
 		{
@@ -619,11 +619,11 @@ void binary_search_int(int array[], int min, int max, int element)
 	
 	printf("\n\tBinary Search");
 	
-	while (min < max) 
+	while (min <= max) 
 	{
 		printf("\n\tLoop runs %d times", (++i));  // number of times executed
 		
-		mid = (max - min) / 2;
+		mid = (max + min) / 2;
 
 		if (array[mid] == element)
 		{
